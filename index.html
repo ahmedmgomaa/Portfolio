@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome To Egypt</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head> 
+    <body>
+        <form>
+            <h1>Reserve your next trip with me to Egypt</h1>
+            <p>Please take a moment to be in touch with me, I will be back shortly.</p>
+            <div>
+                <label for="Name">Full Name:</label>
+                <input type="text" name="Name" id="Name"
+                placeholder="Enter your full name" required>
+            </div>
+            <div>
+                <label for="Email">Email Address:</label>
+                <input type="email" name="Email" id="Email"
+                placeholder="Example@gmail.com" required>
+            </div>
+            <div>
+                <label for="Phone">Phone Number:</label>
+                <input type="tel" name="phone" id="Phone"
+                placeholder="Enter your phone number" required>
+                <div>
+                    <label for="gender">Gender</label>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label class="inline-label" for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label class="inline-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="date">Arriving Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
+                    <label for="date">Departure Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
+                    <label for="file">Passport</label>
+                    <input type="file" name="file" id="file">
+                </div>
+                <div>
+                    <label for="cities">Where would you like to travel?</label>
+                    <select name="cities" id="cities">
+                        <option value="">Choose one</option>
+                        <option value="Cairo">Cairo</option>
+                        <option value="Alexandria">Alexandria</option>
+                        <option value="Luxor">Luxor</option>
+                        <option value="Ismailia">Ismailia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Please check on the services that you need</label>
+                    <div>
+                        <input type="checkbox" name="Airline-Tickets" id="Airline-Tickets">
+                        <label for="Airline-Tickets" class="inline-label">Airline Tickets</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Rental-Car" id="Rental-Car">
+                        <label for="Rental-Car" class="inline-label">Rental Car</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Hotel-Accomadations" id="Hotel-Accomadationss">
+                        <label for="Hotel-Accomadations" class="inline-label">Hotel Accomadations</label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
